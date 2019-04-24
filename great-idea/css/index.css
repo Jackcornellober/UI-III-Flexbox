@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style-type: square;
 }
 blockquote, q {
 	quotes: none;
@@ -60,11 +60,15 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 0px;
+	font-weight: bold;
 }
+
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+
+	
 
 	.everything {
 		max-width: 876px;
@@ -75,25 +79,27 @@ h1, h2, h3, h4, h5 {
 
 	}		
 
-
 	nav {
 		display: flex;
 		align-items: center;
 		height: 60px;
-		justify-content: space-around;
+		justify-content: space-between;
+		width: 876px;
+		margin-bottom: 15px;
 	}
 	
 	a {
-		padding: 0px 30px 0px 30px;
 		color: black;
 		text-decoration: none;
 		
 	}
+
+	
 	.logo { 
-		padding-left: 45px;
+	transform: translate(60px, 0px);	
 	}
 
-	header {
+	.indexheader {
 		text-align: center;
 		display: flex;
 		align-items: center;
@@ -159,3 +165,83 @@ h1, h2, h3, h4, h5 {
 		margin-top: 45px;
 		
 	}
+
+	.servicesheader {
+		display: flex;
+		height: 120px;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.servicesh2 {
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+	.midcontent {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		justify-content: space-between;
+		height: 880px;
+		padding-top: 35px;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		padding-bottom: 35px;
+	
+	
+	}
+
+	.midcontentflexchild {
+		width: 47.5%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-around;
+		justify-content: space-around;
+		height: 250px;
+		background: lightgrey;
+		border: 1px solid black;
+
+	}
+
+	.midcontentflexchild div {
+		width: 87.5%;
+		height: 225px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-evenly;
+	}
+
+	.botcontent {
+		display: flex;
+		height: 350px;
+		
+	}
+
+	.botcontentflexchild {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-evenly;
+		flex-direction: row;
+		height: 350px;
+	}
+
+	ul {
+		margin-left: 20px;
+	}
+
+	.botcontentflexchild p {
+		width: 400px;
+	}
+
+	@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 1024px)  {
+		.midcontentflexchild {
+			width: 100%;
+		}
+		
+		.midcontent {
+			margin-bottom: 675px;
+		}
+	}
+
