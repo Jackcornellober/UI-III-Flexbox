@@ -68,8 +68,11 @@ h1, h2, h3, h4, h5 {
 
 	.everything {
 		max-width: 876px;
-		display: inline-block;
+		display: flex;
 		margin-left: 65px;
+		flex-wrap: wrap;
+		justify-content: center;
+
 	}		
 
 
@@ -94,8 +97,9 @@ h1, h2, h3, h4, h5 {
 		text-align: center;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 		height: 500px;
+		width: 876px;
 		
 	}
 	
@@ -153,4 +157,5 @@ h1, h2, h3, h4, h5 {
 	footer {
 		text-align: center;
 		margin-top: 45px;
+		
 	}
