@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5 {
 		align-content: space-around;
 		justify-content: space-around;
 		height: 250px;
-		background: lightgrey;
+		background: #F5F5F5;
 		border: 1px solid black;
 
 	}
@@ -209,6 +209,15 @@ h1, h2, h3, h4, h5 {
 		display: flex;
 		flex-wrap: wrap;
 		align-content: space-evenly;
+	}
+
+	.roundbutton {
+		border-radius: 5px;
+		background: white;
+		border: solid black 1px;
+		font-size: 13px;
+		width: 140px;
+		height: 30px;
 	}
 
 	.botcontent {
